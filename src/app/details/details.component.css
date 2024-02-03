@@ -111,6 +111,15 @@ color: rgb(143, 83, 27);
 
     .recipe-image {
         height: 100%;
+        width: 100%;
+    }
+
+    .top-container {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
     }
 
     .content {

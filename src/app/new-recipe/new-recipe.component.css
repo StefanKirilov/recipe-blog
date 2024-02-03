@@ -30,7 +30,7 @@ height: auto;
 }
 
 
-.login-page {
+.new-page {
     width: 500px;
     height: 1200px;
     text-align: center;
@@ -40,7 +40,6 @@ height: auto;
     margin-top: 30px;
     border-radius: 8px;
     background-color: rgba(175, 175, 175, 0.3);
-    /* animation: fadeIn 1s 0.1s backwards; */
 }
 
 
@@ -123,10 +122,21 @@ height: auto;
     }
 
     .new-image {
+        width: 100%;
         height: 100%;
-
     }
 
+    .new-page {
+        width: calc(100vw - 6%);  
+    }
+
+    .container input {
+        width: 80%;
+    }
+
+    .container textarea {
+       width: 80%;
+    }
     
 
  }

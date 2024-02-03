@@ -160,5 +160,9 @@
         width: 350px;
     }
     
+    .search {
+        width: calc(100vw - 10%);
+        padding-left: 10px;
+    }
 
  }

@@ -178,5 +178,9 @@
     .container-items{
         font-size: 12px;
     }
+
+    .container-img {
+        height: 150px;
+    }
 }
 

@@ -153,7 +153,8 @@ height: auto;
     }
 
     .container .contact-info .social-media a svg{
-        width: 24px;
+        width: 20px;
+        margin: 0px 4px;
      }
 
      .container .contact-info{

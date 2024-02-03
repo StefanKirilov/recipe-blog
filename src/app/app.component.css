@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgba(169, 108, 107, 0.1);
+}
+
+.main {
+    flex-grow: 1;
+    background-color: rgba(169, 108, 107, 0.1);
+}
+
+@media (max-width: 601px){
+    .res-wrapper {
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(169, 108, 107, 0.1);
+    }
+}

@@ -1,0 +1,31 @@
+<div class="wrap-top">
+    <div class="loader" *ngIf="isLoading">
+        <app-spinner />
+    </div>
+    <div class='container-top' *ngIf="!isLoading">
+        <div class="recipe-image">
+            <img src="../../assets/vege2.jpg" alt="">
+            <div class="contact-me">
+                <h1>ВСИЧКИ РЕЦЕПТА</h1>
+            </div>
+        </div>
+        <form class="search" #search="ngForm" (ngSubmit)="searchFood(search)" >
+            <input id="search" name="search" type="text" class="text" ngModel #search="ngModel">
+            <input class='btn submit' type='submit' value="Търси" />
+        </form>
+        <div class="searchField" *ngIf="searchField">
+            <h1>Търсене:</h1>
+            <p>{{searching}}</p>
+        </div>
+        <div class='wrapper'>
+            <div class='container-second' *ngFor="let food of foodList">
+                <div class="container-img">
+                    <img class="image" src="{{food.image}}" />
+                </div>
+                <div class='container-items'>
+                    <h1> <a routerLink="/recipe/details/{{food.id}}">{{food.name}}</a> </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

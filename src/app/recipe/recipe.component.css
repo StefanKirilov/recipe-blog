@@ -65,11 +65,13 @@
     background-color: #2b3a24;
     height: 200px;
     background-color: rgba(190, 189, 189, 0.3);
+    caret-color: transparent;
 }
 
 .container-img .image {
     width: 100%;
     height: 100%;
+    caret-color: transparent;
 }
 
 
@@ -102,13 +104,20 @@
     font-size: medium;
 }
 
+#search {
+    height: 40px;
+}
+
 
 .search .btn {
     width: 160px;
+    height: 40px;
     border-radius: 6px;
     border: solid 2px rgba(143, 140, 140, 0.8);
     background-color:rgba(190, 189, 189, 0.3);
 }
+
+
 
 
 .search .btn:hover {

@@ -135,5 +135,8 @@ color: rgb(143, 83, 27);
             font-size: 20px;
         }
 
+        .content img{
+            height: 150px;
+            }
 
 }

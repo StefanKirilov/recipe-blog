@@ -6,7 +6,7 @@
         <div class="recipe-image">
             <img src="../../assets/vege2.jpg" alt="">
             <div class="contact-me">
-                <h1>ВСИЧКИ РЕЦЕПТА</h1>
+                <h1>ВСИЧКИ РЕЦЕПТИ</h1>
             </div>
         </div>
         <form class="search" #search="ngForm" (ngSubmit)="searchFood(search)" >
@@ -18,12 +18,12 @@
             <p>{{searching}}</p>
         </div>
         <div class='wrapper'>
-            <div class='container-second' *ngFor="let food of foodList">
+            <div routerLink="/recipe/details/{{food.id}}" class='container-second' *ngFor="let food of foodList">
                 <div class="container-img">
                     <img class="image" src="{{food.image}}" />
                 </div>
                 <div class='container-items'>
-                    <h1> <a routerLink="/recipe/details/{{food.id}}">{{food.name}}</a> </h1>
+                    <h1> <a>{{food.name}}</a> </h1>
                 </div>
             </div>
         </div>

@@ -95,7 +95,7 @@ label {
 @media (max-width: 781px){
     
     .header {
-        width: 200px;
+        width: 0px;
         height: 100%;
         position: fixed;
     }
@@ -150,9 +150,7 @@ label {
         text-align: center;
         align-items: center;
         gap: 20px;
-    }
-    
-    
+    } 
 
     label {
         display: block;
@@ -198,5 +196,16 @@ label {
     #check:checked ~ label #cancel {
         left: 140px;
     }
+
+    /* .header:not(:hover) .navigation {
+        left: -200px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .5s ease-out;
+    }
+
+    .header:not(:hover) #check {
+       
+    } */
 
 }

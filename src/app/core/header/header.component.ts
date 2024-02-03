@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../../user/user.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
@@ -8,8 +9,9 @@ import { UserService } from '../../user/user.service';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  checkElement :any;
 
-  constructor(private userService: UserService, private router:Router){}
+  constructor(private userService: UserService, private router:Router, private elRef: ElementRef){}
 
   get isLoggedIn(): boolean {
     return this.userService.isLogged;
@@ -18,5 +20,11 @@ export class HeaderComponent {
   logout(): void {
     this.userService.logout();
     this.router.navigate(['/home']);
+  }
+
+  uncheck(event: any): void {
+    this.checkElement = document.querySelector('#check');
+    this.checkElement.checked = false;
+
   }
 }

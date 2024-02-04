@@ -79,7 +79,7 @@ height: auto;
 }
 
 .container .text{
-    width: 50%;
+    width: 60%;
     padding: 0px 160px 0px 0px;
     text-align: justify;
 }
@@ -130,6 +130,7 @@ height: auto;
     
      .container .text h1{
         margin: 24px 0px;
+        text-align: center;
      }
 
      .container .my-image{

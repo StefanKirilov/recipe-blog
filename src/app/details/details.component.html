@@ -16,10 +16,10 @@
             <div  *ngIf="haveLoginUser">
                 <div class="buttons like" *ngIf="!isUser">
                     <div *ngIf="!isLike">
-                        <a (click)="likeFood()">Вкарай в любими</a>   
+                        <a (click)="likeFood()">Добави в любими</a>   
                     </div>
                     <div *ngIf="isLike">
-                        <a (click)="unlikeFood()">Изкарай от любими</a>
+                        <a (click)="unlikeFood()">Премахни от любими</a>
                     </div>
                 </div>
             </div>

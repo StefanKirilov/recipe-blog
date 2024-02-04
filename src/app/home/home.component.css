@@ -26,6 +26,7 @@
     margin: 0 10%;
     caret-color: transparent;
     text-align: justify;
+    
 }
 
 .first-section {
@@ -51,6 +52,7 @@
         margin: 40px;
         justify-content: center;
         align-items: center;
+        text-align: inherit;
     }
 
     .first-section {

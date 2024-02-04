@@ -1,7 +1,6 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../../user/user.service';
-import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
@@ -9,8 +8,7 @@ import { NgForm } from '@angular/forms';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  checkElement :any;
-  isTrue: boolean = false;
+  checkElement : any;
 
   constructor(private userService: UserService, private router:Router, private elRef: ElementRef){}
 
@@ -26,7 +24,6 @@ export class HeaderComponent {
   uncheck(): void {
     this.checkElement = document.querySelector('#check');
     this.checkElement.checked = false;
-    this.isTrue = true;
     
   }
 }
